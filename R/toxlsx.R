@@ -140,7 +140,7 @@ toxlsx <- function(object,
     output[[df]][["footnote2"]] <- if (length(footnote2) == 0) "" else footnote2[[df]]
     output[[df]][["footnote3"]] <- if (length(footnote3) == 0) "" else footnote3[[df]]
     output[[df]][["mergecol"]] <- if (length(mergecol) == 0) character(0) else mergecol[[df]]
-    output[[df]][["bygroup"]] <- if (length(bygroup) == 0) character(0) else bygroup[[df]]
+    output[[df]][["bygroup"]] <- if (length(bygroup) == 0) NULL else bygroup[[df]]
     output[[df]][["groupname"]] <- if (length(groupname) == 0) logical(0) else groupname[[df]]
   }
 
